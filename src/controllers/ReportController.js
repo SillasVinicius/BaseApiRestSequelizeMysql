@@ -8,7 +8,7 @@ module.exports = {
     // Desses usuários eu quero buscar as tecnologias que começam com React
 
     const users = await User.findAll({
-      attributes: ['name', 'emails'],
+      attributes: ['name', 'email'],
       where: {
         email: {
           [Op.like]: '%@gmail.com'
